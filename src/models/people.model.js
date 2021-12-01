@@ -18,6 +18,12 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
+    photo: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: 'https://icon-library.com/icon/profile-picture-icon-24.html.html'
+    },
+    
   }, {
     hooks: {
       beforeCount(options) {
